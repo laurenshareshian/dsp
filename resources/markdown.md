@@ -171,7 +171,8 @@ What is the most installed language in the world?
 - Spark
 - Javascript
 
->>REPLACE THIS TEXT WITH YOUR RESPONSE
+>> **Java** is still the most popular language but **Javascript** is the most popular language on GitHub.
+
 
 ***
 
@@ -184,8 +185,7 @@ What is the distribution of t-squared?
  * Beta
  * Bivariate Normal
 
->>REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>> The *T*-squared distribution is proportional to the *F*-distribution.
 ---
 
 #### Q3.  
@@ -195,7 +195,7 @@ In the scikit-learn's official source repo, about how many issues are outstandin
 3. 700  
 4. 7000  
 
->>REPLACE THIS TEXT WITH YOUR RESPONSE
+>> As of March 20th, there were 784 issues. [Scikit] (https://github.com/scikit-learn/scikit-learn)
 
 ---
 
