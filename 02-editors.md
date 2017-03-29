@@ -81,7 +81,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I don't really have a preference so probably vim since it is the default.
 
 --
 
@@ -89,6 +89,6 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> PyCharm because that is what I am used to. I like how easy it is to add packages. Command-F allows you to find all occurrences of a given text within the file, while Shift-Command-F allows you to find all occurrences of a given text within the entire project. Also, Command-D is useful for duplicating a line of text.
 
  
