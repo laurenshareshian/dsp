@@ -42,15 +42,37 @@ finds the maximum of the given list.
 As another example,  
 ```python
 reduce(lambda x, y: x+y, range(1,101))
-```
-calculates the sum of numbers from 1 to 100.
+``` calculates the sum of numbers from 1 to 100.
+
 ---
 
 ### Q4. List Comprehension, Map &amp; Filter
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehension is used to construct lists in natural, easy ways, like a mathematician would do. Here are some examples  
+```python
+S=[x**2 for x in range(10)]  
+M=[x for x in S if x % 2 ==0]  
+```  map is a function with two arguments, a function and a sequence. Map applies the function to all elements in the sequence and returns a new list. For example, 
+```python
+Celsius=[39.2, 36.5, 37.3]
+Fahrenheit = map(lambda x: (float(9)/5)*x+32, Celsius)
+print(Fahrenheit)
+``` would convert the Celsius temps to Fahrenheit.  Filter is an elegant way to filter out all elements of a list for which the function returns true. For example, 
+```python 
+fib=[0,1,1,2,3,5,8,13,21,34,55]
+result=filter(lambda x: x % 2 == 0, fib)
+print(result)
+``` will only print the even numbers in the list.
+To compare map versus filter, note the differences in the following outputs:
+```python
+>>> def f(x): return x % 2 != 0 and x % 3 !=0
+>>> map(f, range(11))
+[False, True, False, False, False, True, False, True, False, False, False]
+>>>filter(f, range(11))
+[1, 5, 7]
+```
 
 ---
 
