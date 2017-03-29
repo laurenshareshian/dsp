@@ -77,7 +77,16 @@ To compare map versus filter, note the differences in the following outputs:
 >>>filter(f, range(11))
 [1, 5, 7]
 ```
-
+As a set comprehension example, 
+```python 
+primes = {x for x in range(2, 101) if not any (x % y == 0 for y in range(2,x))}
+```
+will generate all primes between 2 and 101. As a dictionary comprehension example, 
+```python
+>>> d = {n: n**2 for n in range(5)}
+>>> print d
+{0: 0, 1: 1, 2:4, 3:9, 4:16}
+```
 ---
 
 ### Complete the following problems by editing the files below:
