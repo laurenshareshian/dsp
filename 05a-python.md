@@ -28,21 +28,21 @@ As an example, if you let mylist=['hello', 'hello', 'goodbye'], then myset=set(m
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
 >> Lambda functions are a way to create functions without a name. They are often used with the functions filter(), map(), and reduce(). For example,  
-'''python
+```python
 f = lambda x, y : x+y
 f(1,1)
-'''
+```
 returns the number 2.   
 As another example,  
-'''python 
+```python 
 f=lambda a, b: a if (a > b) else b  
 reduce(f, [47, 11, 42, 102, 13])
-'''
+```
 finds the maximum of the given list.  
 As another example,  
-'''python
+```python
 reduce(lambda x, y: x+y, range(1,101))
-'''
+```
 calculates the sum of numbers from 1 to 100.
 ---
 
