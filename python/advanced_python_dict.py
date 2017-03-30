@@ -1,6 +1,3 @@
-import re
-import string
-
 with open('faculty.csv') as f:
     firstline=f.readline() #removes header
 
