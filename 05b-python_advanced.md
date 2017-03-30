@@ -29,7 +29,7 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 1 jd
 1 degree
 1 bsed
-1 0
+1 0  
 
 
 #### Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
