@@ -93,8 +93,8 @@ def linear_merge(list1, list2):
                 count1 = count1 + 1
 
             else:
-                while word > list2[count2]: #while the current word in the first list is after the words in the second list
-                    new_list.append(list2[count2])
+                while word > list2[count2]:
+                    new_list.append(list2[count2]) #while the current word in the first list is alphabetically after the words in the second list, add the words in the second list
                     count2 = count2 + 1
                     if count2 == len(list2): #if you have added all of the second list then stop
                         break
