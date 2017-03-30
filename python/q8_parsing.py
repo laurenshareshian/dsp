@@ -19,4 +19,3 @@ for i in range(2, len(football_data)):
 
 print(smallest_team+'has the smallest difference of ' + str(smallest))
 
-#print(football_data)
