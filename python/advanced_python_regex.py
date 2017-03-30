@@ -36,7 +36,8 @@ with open('faculty.csv') as f:
 
 
         #store email address in list
-        email_list.append(line.strip().split(',')[3])
+        email=line.strip().split(',')[3]
+        email_list.append(email)
 
 #sort the degree dictionary by value
 degree_lst=list()
@@ -61,7 +62,9 @@ for key,val in title_lst:
     print (key, val)
 
 #print email list
+email_file = open('advanced_python_csv.py', 'w')
 for email in email_list:
+    email_file.write(email+'\n')
     domain=re.findall('@\S+', email)[0]
     if domain not in email_counts:
         email_counts[domain] = 1
