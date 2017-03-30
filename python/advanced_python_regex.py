@@ -6,6 +6,9 @@ with open('faculty.csv') as f:
 
     degree_counts=dict()
     title_counts = dict()
+    email_list=[]
+    email_counts=dict()
+
     for line in f:
         #count types of degrees
         degree=line.strip().split(',')[1]
@@ -32,24 +35,39 @@ with open('faculty.csv') as f:
             title_counts[title] += 1
 
 
-    #sort the degree dictionary by value
-    degree_lst=list()
-    for key,val in degree_counts.items():
-        degree_lst.append((val, key))
+        #store email address in list
+        email_list.append(line.strip().split(',')[3])
 
-    degree_lst.sort(reverse = True)
+#sort the degree dictionary by value
+degree_lst=list()
+for key,val in degree_counts.items():
+    degree_lst.append((val, key))
 
-    print(str(len(degree_lst))+' types of degrees')
-    for key,val in degree_lst:
-        print (key, val)
+degree_lst.sort(reverse = True)
 
-    #sort the title dictionary by value
-    title_lst=list()
-    for key,val in title_counts.items():
-        title_lst.append((val, key))
+print(str(len(degree_lst))+' types of degrees')
+for key,val in degree_lst:
+    print (key, val)
 
-    title_lst.sort(reverse = True)
+#sort the title dictionary by value
+title_lst=list()
+for key,val in title_counts.items():
+    title_lst.append((val, key))
 
-    print(str(len(title_lst))+' types of titles')
-    for key,val in title_lst:
-        print (key, val)
+title_lst.sort(reverse = True)
+
+print(str(len(title_lst))+' types of titles')
+for key,val in title_lst:
+    print (key, val)
+
+#print email list
+for email in email_list:
+    domain=re.findall('@\S+', email)[0]
+    if domain not in email_counts:
+        email_counts[domain] = 1
+    else:
+        email_counts[domain] += 1
+
+print(str(len(email_counts))+' types of domains')
+print(email_counts)
+
