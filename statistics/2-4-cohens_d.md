@@ -12,7 +12,7 @@ def main():
     others = live[live.birthord != 1]
     print('first:', firsts.totalwgt_lb.mean(), 'others:',others.totalwgt_lb.mean())
     print(CohenEffectSize(firsts.totalwgt_lb,others.totalwgt_lb))
-    #the mean weight of first babies is slightly larger than later babies
+    #the mean weight of first babies is slightly less than later babies
     #but only by 0.09 standard deviations which is very small
     
 
