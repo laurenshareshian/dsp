@@ -1,5 +1,5 @@
 [Think Stats Chapter 3 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2004.html#toc31) (actual vs. biased)
-
+```python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -27,3 +27,4 @@ ax.set_xticks(np.arange(0,7,1))
 ax.legend()
 print('data mean', df.data.mean())
 print('biased mean', df2.biased_data.mean())
+```
