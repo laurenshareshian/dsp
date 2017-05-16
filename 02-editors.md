@@ -37,7 +37,7 @@ Here's a basic list of commands:
 | 2 | vim, vi        | vim filen.py   | [just type]  | esc :w, enter      | esc :q, enter  |
 | 3 | emacs          | emacs filen.py | [just type]  | ctrl-x, xtrl-s     | ctrl-x, ctrl-c |
  
-
+for VIM: vim filename, then i to insert text, then escape to exit insert mode, then shift-zz to save and exit
 ---
 
 ## Graphical Editor
