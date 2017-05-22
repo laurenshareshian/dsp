@@ -87,7 +87,7 @@ def sample_skewness(data):
 
 def main():
     df = ReadData()
-    log_sample = InterpolateSample(income_df, log_upper=6.0)
+    log_sample = InterpolateSample(df, log_upper=6.0)
     data = np.array([10**x for x in log_sample])
     mycdf(data)
     mypdf(data)
