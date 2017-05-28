@@ -29,15 +29,6 @@ def BinnedPercentiles(df, minval, maxval, incr_num):
     thinkplot.Config(xlabel="Mother's age (years)",ylabel='Birth weight (lbs)',xlim=[14, 45], legend=True)
     plt.show()
     
-def Corr(xs, ys):
-    xs = np.asarray(xs)
-    ys = np.asarray(ys)
-
-    meanx, varx = MeanVar(xs)
-    meany, vary = MeanVar(ys)
-
-    corr = Cov(xs, ys, meanx, meany) / math.sqrt(varx * vary)
-    return corr
 
 def main():
     preg = nsfg.ReadFemPreg()
